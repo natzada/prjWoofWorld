@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slide-content input {
+    display: none;
+}
+
+.slide-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+.slide-box img{
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 
+      10px 10px 30px rgba(0, 0, 0, 0.3),   
+      -10px -10px 30px rgba(0, 0, 0, 0.2);  
+}
+
+.nav-manual, .nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+    border: 1px solid #655793;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #655793;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5 {
+    background-color: #655793;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: -0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro {
+    margin-left: -75%;
+}
+
+
+#prev-btn, #next-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #F6D325;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    box-shadow: 
+      10px 10px 30px rgba(0, 0, 0, 0.3),   
+      -10px -10px 30px rgba(0, 0, 0, 0.2);  
+}
+
+#prev-btn img, #next-btn img {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+#prev-btn {
+    margin-top: 16%;
+    left: 10%;
+}
+
+#next-btn {
+    margin-top: 16%;
+    right: 10%;
+}
+
+
+
+@media (max-width: 1200px) {
+    .slide-box {
+        width: 33.33%; /* Reduz a largura das caixas de slide */
+    }
+}
+
+@media (max-width: 992px) {
+    .slide-box {
+        width: 50%; /* Aumenta o número de slides visíveis */
+    }
+
+    .nav-manual, .nav-auto {
+        margin-top: 15%;
+    }
+
+    #prev-btn, #next-btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .slide-box img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-box {
+        width: 100%; /* Torna os slides em uma linha */
+    }
+
+    .nav-manual, .nav-auto {
+        margin-top: 10%;
+    }
+
+    .nav-manual .manual-btn, .nav-auto div {
+        padding: 8px;
+    }
+
+    #prev-btn, #next-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slide-box img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-manual .manual-btn, .nav-auto div {
+        padding: 5px;
+    }
+
+    #prev-btn, #next-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slide-box img {
+        width: 100%; /* Imagem ocupa toda a largura */
+    }
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/slide.css">
+    <link rel="shortcut icon" href="WoofWorld fav icon.png" type="image/x-icon">
+    <title>Woof World</title>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/Woof World logo.png" alt="" class="logo-img">
+        <nav class="nav">
+            <ul>
+                <li><a href="#home" class="nav-items">Home</a></li>
+                <li><a href="#about" class="nav-items">About</a></li>
+                <li><a href="#services" class="nav-items">Services</a></li>
+                <li><a href="#products" class="nav-items">Products</a></li>
+            </ul>
+        </nav>
+        <button id="compras"><img src="assets/carrinho de compras icon.png" alt=""></button>
+    </header>
+    
+    <main>
+        <section id="home">
+            <section class="slider">
+                <div class="slide-content">
+                    <button id="prev-btn"><img src="assets/prev-arrow.png" alt=""></button>
+                    <button id="next-btn"><img src="assets/next-arrow.png" alt=""></button>
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+                    <input type="radio" name="btn-radio" id="radio4">
+                    <input type="radio" name="btn-radio" id="radio5">
+                    <div class="slide-box primeiro">
+                        <img src="assets/slide 1.png" alt="slide 1">
+                    </div>
+                    <div class="slide-box">
+                        <img src="assets/slide 2.png" alt="slide 2">
+                    </div>
+                    <div class="slide-box">
+                        <img src="assets/slide 3.png" alt="slide 3">
+                    </div>
+                    <div class="slide-box">
+                        <img src="assets/slide 4.png" alt="slide 4">
+                    </div>
+                    <div class="slide-box">
+                        <img src="assets/slide 5.png" alt="slide 5">
+                    </div>
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <section id="about"></section>
+
+        <section id="services">
+            <article class="articles">
+                <div class="title-services">
+                    <h2>Conheça os nossos <span class="highlight">Serviços</span></h2>
+                </div>
+                <section id="articles-section">
+                    <article class="service-article">
+                        <img src="assets/cachorro-tomando-banho.png" alt="" class="service-img">
+                        <div class="flex">
+                            <h2 class="service-title">Banho</h2>
+                            <p class="service-description">Serviço de higiene para pets, que inclui a lavagem, secagem e cuidados especiais com o pelo do animal, utilizando produtos específicos para garantir o conforto e bem-estar.</p>
+                            <button class="read-more">Saiba Mais</button>
+                        </div>
+                    </article>
+                    <article class="service-article">
+                        <img src="assets/cachorro-sendo-tosado.jpg" alt="" class="service-img">
+                        <div class="flex">
+                            <h2 class="service-title">Tosa</h2>
+                            <p class="service-description">Corte e aparo de pelos de cães e gatos, ajustados ao estilo ou necessidade do animal. Ideal para manter o pet confortável e com o visual bem cuidado.</p>
+                            <button class="read-more">Saiba Mais</button>
+                        </div>
+                    </article>
+                    <article class="service-article">
+                        <img src="assets/cachorro-no-hotel.png" alt="" class="service-img">
+                        <div class="flex">
+                            <h2 class="service-title">Hotel</h2>
+                            <p class="service-description">Acomodações temporárias para animais, oferecendo cuidado e atenção enquanto os donos estão ausentes. Inclui alimentação, lazer e supervisão constante.</p>
+                            <button class="read-more">Saiba Mais</button>
+                        </div>
+                    </article>
+                    <article class="service-article">
+                        <img src="assets/gatinha-vacina.jpg" alt="" class="service-img">
+                        <div class="flex">
+                            <h2 class="service-title">Vacina</h2>
+                            <p class="service-description">Aplicação de vacinas essenciais para a proteção e saúde do pet, prevenindo doenças comuns e garantindo a imunidade necessária para uma vida longa e saudável.</p>
+                            <button class="read-more">Saiba Mais</button>
+                        </div>
+                    </article>
+                    <article class="service-article">
+                        <img src="assets/consulta-veterinaria-em-poa-1.jpg" alt="" class="service-img">
+                        <div class="flex">
+                            <h2 class="service-title">Consultas</h2>
+                            <p class="service-description">Atendimento veterinário especializado para diagnóstico, prevenção e tratamento de doenças, garantindo o acompanhamento da saúde do pet de forma adequada.</p>
+                            <button class="read-more">Saiba Mais</button>
+                        </div>
+                    </article>
+                    <article class="service-article">
+                        <img src="assets/Dog-Walker-blog-img2.jpg" alt="" class="service-img">
+                        <div class="flex">
+                            <h2 class="service-title">Pet Walker</h2>
+                            <p class="service-description">Serviço de passeios para cães, proporcionando momentos de exercício e socialização fora de casa, ideal para pets que não têm acesso a espaço livre ou para donos que têm horários apertados.</p>
+                            <button class="read-more">Saiba Mais</button>
+                        </div>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <section id="products">
+            <h2>Produtos em Destaque</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="assets/biscoito.jpg" alt="Produto 1">
+                        </div>
+                        <p>Produto 1</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="assets/brinquedo.png" alt="Produto 2">
+                        </div>
+                        <p>Produto 2</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="assets/caminha.png" alt="Produto 3">
+                        </div>
+                        <p>Produto 3</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="assets/risotinho.jpg" alt="Produto 4">
+                        </div>
+                        <p>Produto 4</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="assets/roupinha.png" alt="Produto 5">
+                        </div>
+                        <p>Produto 5</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+        </section>
+
+        <div class="background-top" data-v-d9a8dcd6="">
+            <svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg&quot; data-v-d9a8dcd6="><path d="M336.091 0C49.0433 0 0 48 0 48L1366 48V0C1366 0 1283.78 37.5061 1005.39 37.5061C726.995 37.5061 623.138 0 336.091 0Z" fill="#A18BB9" data-v-d9a8dcd6=""></path></svg>
+        </div>
+        <section id="pet-plans">
+                <h1 class="carousel-title">Plano de saúde para cuidar do seu pet</h1>
+            <h2>Planos de Saúde para Pets</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <button class="carousel-btn prev">←</button>
+                    <div class="carousel-slides">
+                        <div class="slide">
+                            <h2>Petlove <span>Leve</span></h2>
+                            <p class="description">0 mais em conta</p>
+                            <p class="price">R$ 14,90/mês em São Paulo e região</p>
+                            <button class="check-coverage">Conferir cobertura</button>
+                            <button class="hire">Contratar</button>
+                        </div>
+                        <div class="slide">
+                            <h2>Petlove <span>Tranquilo</span></h2>
+                            <p class="description">Para cuidados de rotina <span>♥</span></p>
+                            <p class="price">R$ 39,90/mês em São Paulo e região</p>
+                            <button class="check-coverage">Conferir cobertura</button>
+                            <button class="hire">Contratar</button>
+                        </div>
+                        <div class="slide">
+                            <h2>Petlove <span>Ideal</span></h2>
+                            <p class="description">Melhor custo benefício <span>★</span></p>
+                            <p class="price">R$ 104,90/mês em São Paulo e região</p>
+                            <button class="check-coverage">Conferir cobertura</button>
+                            <button class="hire">Contratar</button>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next">→</button>
+                </div>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+        <div class="background__bottom" data-v-d9a8dcd6=""><svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-d9a8dcd6=""><path d="M1029.91 48C1316.96 48 1366 0 1366 0L0 0V48C0 48 82.2194 10.4939 360.612 10.4939C639.005 10.4939 742.862 48 1029.91 48Z" fill="#A18BB9" data-v-d9a8dcd6=""></path></svg></div>
+    </main>
+
+    <div class="background-top-footer" data-v-d9a8dcd6="">
+        <svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg&quot; data-v-d9a8dcd6="><path d="M336.091 0C49.0433 0 0 48 0 48L1366 48V0C1366 0 1283.78 37.5061 1005.39 37.5061C726.995 37.5061 623.138 0 336.091 0Z" fill="#e5cddd" data-v-d9a8dcd6=""></path></svg>
+    </div>
+    <footer>
+        <p>&copy;Todos os direitos reservados - Woof World</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+    <script>
+        // Script para o carrossel de produtos
+        const carousel = document.querySelector('#products .carousel');
+        const items = document.querySelectorAll('#products .carousel-item');
+        const totalItems = items.length;
+        const itemWidth = items[0].offsetWidth;
+        let currentIndex = 0;
+
+        function setupInfiniteCarousel() {
+            const firstItems = Array.from(items).slice(0, 3);
+            const lastItems = Array.from(items).slice(-3);
+
+            lastItems.forEach(item => carousel.insertBefore(item.cloneNode(true), items[0]));
+            firstItems.forEach(item => carousel.appendChild(item.cloneNode(true)));
+
+            currentIndex = 3;
+            carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+
+        function moveSlide(step) {
+            currentIndex += step;
+
+            carousel.style.transition = 'transform 0.5s ease';
+            carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+
+            carousel.addEventListener('transitionend', function resetPosition() {
+                if (currentIndex <= 2) {
+                    currentIndex = totalItems + 2;
+                    carousel.style.transition = 'none';
+                    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                } else if (currentIndex >= totalItems + 3) {
+                    currentIndex = 3;
+                    carousel.style.transition = 'none';
+                    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                }
+                carousel.removeEventListener('transitionend', resetPosition);
+            }, { once: true });
+        }
+
+        setupInfiniteCarousel();
+
+        // Script para o carrossel de planos
+        let currentSlide = 0;
+        const slides = document.querySelector('#pet-plans .carousel-slides');
+        const totalSlides = document.querySelectorAll('#pet-plans .slide').length;
+        const dots = document.querySelectorAll('#pet-plans .dot');
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${currentSlide * 310}px)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentSlide].classList.add('active');
+        }
+
+        document.querySelector('#pet-plans .next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlide();
+        });
+
+        document.querySelector('#pet-plans .prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlide();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                updateSlide();
+            });
+        });
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlide();
+        }, 5000);
+    </script>
+</body>
+</html>

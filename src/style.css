@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&family=Rowdies&family=Spicy+Rice&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spicy Rice', sans-serif;
+    background-color: #f2f1f1;
+}   
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5cddd;
+    height: 13vh;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;   
+    align-items: center;
+}
+
+nav ul li {
+    text-align: center;
+    list-style-type: none;
+    margin: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 27px;
+}
+
+
+nav ul li a {
+    padding: 0 8px;
+    text-decoration: none;
+    color: #A18BB9;
+    transition: .5s;
+    display: block;
+    position: relative;
+}
+
+nav ul:hover li a{
+    opacity: .5;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #655793;
+    border-radius: 10px;
+
+    z-index: -1;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+nav ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform .2s;
+}
+
+
+#compras {
+    background-color: transparent;
+    border: none;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#compras img {
+    width: 100%;
+}
+
+#compras:hover {
+    background-color: #655793;
+    border-radius: 100%;
+}
+
+#articles-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title-services h2 {
+    color: #655793;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0 auto;
+}
+
+article {
+    background-color: #fbf9fc;
+    width: 30%;
+    height: 29vh;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 
+    5px 5px 15px rgba(0, 0, 0, 0.2),  
+    -5px -5px 15px rgba(0, 0, 0, 0.1);  
+  transition: box-shadow 0.3s ease;   
+}
+
+article:hover {
+    box-shadow: 
+      10px 10px 30px rgba(0, 0, 0, 0.3),   
+      -10px -10px 30px rgba(0, 0, 0, 0.2);  
+}
+
+
+.service-img {
+    max-width: 130px;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.service-title {
+    color: #655793;
+    text-align: left;
+}
+
+.service-description {
+    font-family: "Alata", sans-serif;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.flex button {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-family: "Alata", sans-serif;
+    background-color: #F6D325;
+    margin: 10px;
+    width: 30%;
+    /* margin-left: 70%;
+    margin-top: 20px; */
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+.flex button:hover {
+    color: #fff;
+    background-color: #d2b520;
+    
+}
+
+.highlight {
+    color: #F6D325;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: fit-content;
+    height: max-content;
+}
+
+.carousel-item {
+    background-color: #655793;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.image-container {
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+}
+
+@media (max-width: 1200px) {
+    article {
+        width: 45%; /* Ajusta a largura das caixas para duas colunas */
+    }
+}
+
+/* Ajuste para tablets e telas médias */
+@media (max-width: 992px) {
+    nav ul {
+        font-size: 16px; /* Reduz o tamanho da fonte do menu */
+        flex-direction: column; /* Muda a direção do menu para coluna */
+        align-items: flex-start;
+    }
+
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    article {
+        width: 48%; /* Ajusta a largura das caixas */
+    }
+
+    .service-img {
+        max-width: 100px; /* Ajusta o tamanho das imagens */
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        font-size: 14px; 
+        flex-direction: column;
+        margin: 0;
+    }
+
+    article {
+        width: 100%; 
+        height: 150px; 
+        margin: 10px 0; 
+    }
+
+    .service-img {
+        max-width: 80px; 
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+
+    .service-description {
+        font-size: 14px; 
+    }
+}
+
+/* Estilos para a seção de produtos */
+#products {
+    padding: 20px;
+    text-align: center;
+}
+
+#products h2 {
+    color: #4B0082;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.carousel-item {
+    flex: 0 0 33.33%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 1px;
+    z-index: 19;
+}
+
+.next {
+    right: 1px;
+}
+
+/* Estilos para a seção de planos */
+#pet-plans {
+    padding: 20px;
+    background-color: #A18BB9;
+    text-align: center;
+}
+
+#pet-plans h2 {
+    color: #4B0082;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.background-top {
+    position: relative;
+    top: 8px;
+    left: -4px;
+    width: 100.255%;
+}
+
+.carousel-title {
+    color: #4B0082;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide h2 {
+    color: #4B0082;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.slide h2 span {
+    font-weight: bold;
+}
+
+.slide .description {
+    color: #666;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.slide .price {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.slide .check-coverage,
+.slide .hire {
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.slide .check-coverage:hover,
+.slide .hire:hover {
+    background-color: #6A5ACD;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #4B0082;
+    padding: 10px;
+}
+
+.carousel-btn:hover {
+    color: #6A5ACD;
+}
+
+.dots {
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #4B0082;
+}
+
+.background-bottom {
+    top: -2px;
+}
+
+footer {
+    background-color: #e5cddd;
+    width: 100%;
+    height: 10vh;
+    margin-top: 10px;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+}
+
+footer p {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.background-top-footer {
+    position: relative;
+    top: 17px;
+    left: -4px;
+    width: 100.255%;
+}
+
+@media (max-width: 576px) {
+    nav ul li {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+
+    article {
+        width: 100%; 
+        margin: 10px 0;
+        height: 130px; 
+    }
+
+    .service-img {
+        max-width: 70px; 
+    }
+
+    .service-title {
+        font-size: 16px; 
+    }
+
+    .service-description {
+        font-size: 12px; 
+    }
+}
