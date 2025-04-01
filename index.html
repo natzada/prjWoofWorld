@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/slide.css">
+    <link rel="stylesheet" href="src/aboutUs.css">
+    <link rel="stylesheet" href="src/botoes.css">
     <link rel="shortcut icon" href="WoofWorld fav icon.png" type="image/x-icon">
     <title>Woof World</title>
 </head>
@@ -19,8 +21,13 @@
                 <li><a href="#products" class="nav-items">Products</a></li>
             </ul>
         </nav>
-        <button id="compras"><img src="assets/carrinho de compras icon.png" alt=""></button>
+        <div class="buttons">
+            <button id="compras"><a href="/src/cart.html"><img src="assets/carrinho de compras icon.png" alt=""></a></button>
+            <button id="login"><a href="/src/singInSingUp.html"><img src="/assets/login icon.png" alt=""></a></button>
+        </div>
     </header>
+    
+    <div class="background__bottom" data-v-d9a8dcd6=""><svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-d9a8dcd6=""><path d="M1029.91 48C1316.96 48 1366 0 1366 0L0 0V48C0 48 82.2194 10.4939 360.612 10.4939C639.005 10.4939 742.862 48 1029.91 48Z" fill="#e5cddd" data-v-d9a8dcd6=""></path></svg></div>
     
     <main>
         <section id="home">
@@ -66,10 +73,102 @@
             </section>
         </section>
         
-        <section id="about"></section>
+        <section class="melhores_em">
+            <h2>Somos os melhores em:</h2>
+        </section>
+    
+        <!-- Carrossel -->
+        <div class="carousel-container-list">    
+            <!-- Lista de Serviços -->
+            <div class="list_service">
+                <div class="servico">
+                    <div class="servico-img">
+                        <img src="/assets/Tosa_1.png" alt="Tosa">
+                    </div>
+                    <p class="tosa">Tosa</p>
+                </div>
+    
+                <div class="servico">
+                    <div class="servico-img">
+                        <img src="/assets/Banho_1.png" alt="banho">
+                    </div>
+                    <p class="banho">Banho</p>
+                </div>
+    
+                <div class="servico">
+                    <div class="servico-img">
+                        <img src="/assets/Consulta_1.png" alt="consulta">
+                    </div>
+                    <p class="consulta">Consulta</p>
+                </div>
+    
+                <div class="servico">
+                    <div class="servico-img">
+                        <img src="/assets/Hote_1.png" alt="hotel">
+                    </div>
+                    <p class="hotel">Hotel</p>
+                </div>
+    
+                <div class="servico">
+                    <div class="servico-img">
+                        <img src="/assets/Passeio_1.png" alt="Passeio">
+                    </div>
+                    <p class="passeio">Passeio</p>
+                </div>
+    
+                <div class="servico">
+                    <div class="servico-img">
+                        <img src="/assets/Vacina_1.png" alt="Vacina">
+                    </div>
+                    <p class="vacina">Vacina</p>
+                </div>
+    
+    
+            </div>
+    
+        
+        </div>
 
+        <section id="about">
+            <div class="background-top" data-v-d9a8dcd6="">
+                <svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg&quot; data-v-d9a8dcd6="><path d="M336.091 0C49.0433 0 0 48 0 48L1366 48V0C1366 0 1283.78 37.5061 1005.39 37.5061C726.995 37.5061 623.138 0 336.091 0Z" fill="#e5cddd" data-v-d9a8dcd6=""></path></svg></div>
+            <div class="about-us">
+                <h1>Sobre Nós</h1>
+                <p>Sabemos que cada laço é único. Fonte de alegria, evolução, bem-estar. Trabalhamos para que a relação entre pets e suas famílias seja melhor a cada dia.</p>
+            </div>
+            <div class="background__bottom" data-v-d9a8dcd6=""><svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-d9a8dcd6=""><path d="M1029.91 48C1316.96 48 1366 0 1366 0L0 0V48C0 48 82.2194 10.4939 360.612 10.4939C639.005 10.4939 742.862 48 1029.91 48Z" fill="#e5cddd" data-v-d9a8dcd6=""></path></svg></div>
+        
+            <div class="about-container">
+                <h2>Quem somos?</h2>
+                <p>A WoofWorld é apaixonada por pets! Essa não é apenas uma expressão inserida em nossa missão como empresa, mas uma realidade vivenciada todos os dias em nossas atitudes, nas lojas e em todos os nossos pontos de contato.</p>
+                <p>Trabalhamos para que você e seus pets tenham a melhor experiência em nossas lojas, seja através dos serviços de estética e veterinária ou pela variedade de produtos espalhados nos mais diversos mundos: cães, gatos, peixes, aves, roedores, répteis.</p>
+            </div>
+        
+            <div class="background-top" data-v-d9a8dcd6="">
+                <svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg&quot; data-v-d9a8dcd6="><path d="M336.091 0C49.0433 0 0 48 0 48L1366 48V0C1366 0 1283.78 37.5061 1005.39 37.5061C726.995 37.5061 623.138 0 336.091 0Z" fill="#A08DBD" data-v-d9a8dcd6=""></path></svg></div>
+            <div class="about-container2">
+                <h3>Nossa Missão</h3>
+                <p>Criar valor na interação com os apaixonados por animais de estimação, potencializando o bem da relação entre o pet e sua família.</p>
+                <h3>Nossa Visão</h3>
+                <p>Ser mundialmente reconhecido como melhor ecossistema do segmento pet até 2025.</p> 
+            </div>
+            <div class="background__bottom" data-v-d9a8dcd6=""><svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-d9a8dcd6=""><path d="M1029.91 48C1316.96 48 1366 0 1366 0L0 0V48C0 48 82.2194 10.4939 360.612 10.4939C639.005 10.4939 742.862 48 1029.91 48Z" fill="#A08DBD" data-v-d9a8dcd6=""></path></svg></div>
+        
+            <div class="about-container">
+                <h2>Nossos Valores</h2>
+                <div class="values">
+                    <div class="value-box">Somos apaixonados por pets</div>
+                    <div class="value-box">Respeitamos uns aos outros</div>
+                    <div class="value-box">Reconhecemos esforços, premiamos resultados</div>
+                    <div class="value-box">Encantamos nossos clientes</div>
+                    <div class="value-box">Temos prazer em servir</div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="background-top" data-v-d9a8dcd6="">
+            <svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg&quot; data-v-d9a8dcd6="><path d="M336.091 0C49.0433 0 0 48 0 48L1366 48V0C1366 0 1283.78 37.5061 1005.39 37.5061C726.995 37.5061 623.138 0 336.091 0Z" fill="#BEABD2" data-v-d9a8dcd6=""></path></svg></div>
         <section id="services">
-            <article class="articles">
                 <div class="title-services">
                     <h2>Conheça os nossos <span class="highlight">Serviços</span></h2>
                 </div>
@@ -79,7 +178,7 @@
                         <div class="flex">
                             <h2 class="service-title">Banho</h2>
                             <p class="service-description">Serviço de higiene para pets, que inclui a lavagem, secagem e cuidados especiais com o pelo do animal, utilizando produtos específicos para garantir o conforto e bem-estar.</p>
-                            <button class="read-more">Saiba Mais</button>
+                            <button class="read-more">Agendar</button>
                         </div>
                     </article>
                     <article class="service-article">
@@ -87,7 +186,7 @@
                         <div class="flex">
                             <h2 class="service-title">Tosa</h2>
                             <p class="service-description">Corte e aparo de pelos de cães e gatos, ajustados ao estilo ou necessidade do animal. Ideal para manter o pet confortável e com o visual bem cuidado.</p>
-                            <button class="read-more">Saiba Mais</button>
+                            <button class="read-more">Agendar</button>
                         </div>
                     </article>
                     <article class="service-article">
@@ -95,7 +194,7 @@
                         <div class="flex">
                             <h2 class="service-title">Hotel</h2>
                             <p class="service-description">Acomodações temporárias para animais, oferecendo cuidado e atenção enquanto os donos estão ausentes. Inclui alimentação, lazer e supervisão constante.</p>
-                            <button class="read-more">Saiba Mais</button>
+                            <button class="read-more">Agendar</button>
                         </div>
                     </article>
                     <article class="service-article">
@@ -103,7 +202,7 @@
                         <div class="flex">
                             <h2 class="service-title">Vacina</h2>
                             <p class="service-description">Aplicação de vacinas essenciais para a proteção e saúde do pet, prevenindo doenças comuns e garantindo a imunidade necessária para uma vida longa e saudável.</p>
-                            <button class="read-more">Saiba Mais</button>
+                            <button class="read-more">Agendar</button>
                         </div>
                     </article>
                     <article class="service-article">
@@ -111,7 +210,7 @@
                         <div class="flex">
                             <h2 class="service-title">Consultas</h2>
                             <p class="service-description">Atendimento veterinário especializado para diagnóstico, prevenção e tratamento de doenças, garantindo o acompanhamento da saúde do pet de forma adequada.</p>
-                            <button class="read-more">Saiba Mais</button>
+                            <button class="read-more">Agendar</button>
                         </div>
                     </article>
                     <article class="service-article">
@@ -119,12 +218,12 @@
                         <div class="flex">
                             <h2 class="service-title">Pet Walker</h2>
                             <p class="service-description">Serviço de passeios para cães, proporcionando momentos de exercício e socialização fora de casa, ideal para pets que não têm acesso a espaço livre ou para donos que têm horários apertados.</p>
-                            <button class="read-more">Saiba Mais</button>
+                            <button class="read-more">Agendar</button>
                         </div>
                     </article>
                 </section>
-            </article>
         </section>
+        <div class="background__bottom" data-v-d9a8dcd6=""><svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-d9a8dcd6=""><path d="M1029.91 48C1316.96 48 1366 0 1366 0L0 0V48C0 48 82.2194 10.4939 360.612 10.4939C639.005 10.4939 742.862 48 1029.91 48Z" fill="#BEABD2" data-v-d9a8dcd6=""></path></svg></div>
 
         <section id="products">
             <h2>Produtos em Destaque</h2>
@@ -132,33 +231,39 @@
                 <div class="carousel">
                     <div class="carousel-item">
                         <div class="image-container">
-                            <img src="assets/biscoito.jpg" alt="Produto 1">
+                            <img src="assets/biscoito.png" alt="Produto 1">
                         </div>
-                        <p>Produto 1</p>
+                        <button class="buy-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="carousel-item">
                         <div class="image-container">
                             <img src="assets/brinquedo.png" alt="Produto 2">
                         </div>
-                        <p>Produto 2</p>
+                        <button class="buy-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="carousel-item">
                         <div class="image-container">
                             <img src="assets/caminha.png" alt="Produto 3">
                         </div>
-                        <p>Produto 3</p>
+                        <button class="buy-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="carousel-item">
                         <div class="image-container">
-                            <img src="assets/risotinho.jpg" alt="Produto 4">
+                            <img src="assets/risotinho.png" alt="Produto 4">
                         </div>
-                        <p>Produto 4</p>
+                        <button class="buy-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="carousel-item">
                         <div class="image-container">
                             <img src="assets/roupinha.png" alt="Produto 5">
                         </div>
-                        <p>Produto 5</p>
+                        <button class="buy-btn">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="assets/ração.png" alt="Produto 6">
+                        </div>
+                        <button class="buy-btn">Adicionar ao carrinho</button>
                     </div>
                 </div>
                 <button class="prev" onclick="moveSlide(-1)">❮</button>
@@ -173,8 +278,8 @@
                 <h1 class="carousel-title">Plano de saúde para cuidar do seu pet</h1>
             <h2>Planos de Saúde para Pets</h2>
             <div class="carousel-container">
+                <button class="carousel-btn prev">❮</button>
                 <div class="carousel">
-                    <button class="carousel-btn prev">←</button>
                     <div class="carousel-slides">
                         <div class="slide">
                             <h2>Petlove <span>Leve</span></h2>
@@ -198,8 +303,8 @@
                             <button class="hire">Contratar</button>
                         </div>
                     </div>
-                    <button class="carousel-btn next">→</button>
                 </div>
+                <button class="carousel-btn next">❯</button>
                 <div class="dots">
                     <span class="dot active"></span>
                     <span class="dot"></span>
@@ -210,6 +315,66 @@
         <div class="background__bottom" data-v-d9a8dcd6=""><svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-d9a8dcd6=""><path d="M1029.91 48C1316.96 48 1366 0 1366 0L0 0V48C0 48 82.2194 10.4939 360.612 10.4939C639.005 10.4939 742.862 48 1029.91 48Z" fill="#A18BB9" data-v-d9a8dcd6=""></path></svg></div>
     </main>
 
+    <section id="feedbacks">
+        <h2>O que nossos clientes dizem</h2>
+        
+        <div class="feedback-carousel">
+            <div class="feedback-slides" id="carousel">
+                
+                <div class="feedback-slide">
+                    <div class="image-wrapper">
+                        <img src="/assets/gatinho2-feedback.jpg" alt="Gato aconchegado">
+                    </div>
+                    <div class="feedback-content">
+                        <h3>Luma, gata da Nicole</h3>
+                        <p>Atendimento incrível! Minha gata foi tratada com muito carinho.</p>
+                        <div class="ratings">⭐ 4.9 Yelp | ⭐ 4.8 Google</div>
+                    </div>
+                </div>
+    
+                <div class="feedback-slide">
+                    <div class="image-wrapper">
+                        <img src="/assets/cachorro-feedback.jpg" alt="Cachorro feliz">
+                    </div>
+                    <div class="feedback-content">
+                        <h3>Bella, cachorra da Fernanda</h3>
+                        <p>A Bella amou o serviço, foi tratada como uma rainha!</p>
+                        <div class="ratings">⭐ 4.7 Yelp | ⭐ 4.6 Google</div>
+                    </div>
+                </div>
+    
+                <div class="feedback-slide">
+                    <div class="image-wrapper">
+                        <img src="/assets/gatinho-feedback.jpg" alt="Gatinho curioso">
+                    </div>
+                    <div class="feedback-content">
+                        <h3>Mimoso, gato da Alice</h3>
+                        <p>Pessoal super amigável, o Mimoso se divertiu muito!</p>
+                        <div class="ratings">⭐ 4.8 Yelp | ⭐ 4.7 Google</div>
+                    </div>
+                </div>
+    
+                <div class="feedback-slide">
+                    <div class="image-wrapper">
+                        <img src="/assets/cachorro2-feedback.jpg" alt="Cachorro relaxado">
+                    </div>
+                    <div class="feedback-content">
+                        <h3>Thor, cão da Sara</h3>
+                        <p>Ótimo pet shop! Thor adorou o banho e tosa.</p>
+                        <div class="ratings">⭐ 4.9 Yelp | ⭐ 4.8 Google</div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="feedback-nav">
+            <button >❮</button>
+            <button>❯</button>
+        </div>
+    </section>
+    
+
     <div class="background-top-footer" data-v-d9a8dcd6="">
         <svg viewBox="0 0 1366 48" fill="none" xmlns="http://www.w3.org/2000/svg&quot; data-v-d9a8dcd6="><path d="M336.091 0C49.0433 0 0 48 0 48L1366 48V0C1366 0 1283.78 37.5061 1005.39 37.5061C726.995 37.5061 623.138 0 336.091 0Z" fill="#e5cddd" data-v-d9a8dcd6=""></path></svg>
     </div>
@@ -218,7 +383,7 @@
     </footer>
 
     <script src="src/script.js"></script>
-    <script>
+    <!-- <script>
         // Script para o carrossel de produtos
         const carousel = document.querySelector('#products .carousel');
         const items = document.querySelectorAll('#products .carousel-item');
@@ -292,6 +457,20 @@
             currentSlide = (currentSlide + 1) % totalSlides;
             updateSlide();
         }, 5000);
-    </script>
+
+        let index = 0;
+
+        function moveSlide(step) {
+            const carousel = document.querySelector('.feedback-slides'); 
+            const slides = document.querySelectorAll('.feedback-slide');
+            const totalSlides = slides.length;
+
+            index = (index + step + totalSlides) % totalSlides;
+            
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+            carousel.style.transition = 'transform 0.5s ease-in-out';
+        }
+
+    </script> -->
 </body>
 </html>

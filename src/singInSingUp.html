@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../WoofWorld fav icon.png" type="image/x-icon">
+    <title>Login || Cadastro</title>
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="singInSingUp.css" />
+  </head>
+  <body>
+    <!-- header-->
+    <header class="header">
+      <img src="/assets/Woof World logo.png" alt="" class="logo-img" />
+    
+      <div class="buttons">
+        <button id="home"><img src="/assets/home icon.png" alt="" /></button>
+      </div>
+    </header>
+    <div class="background__bottom" data-v-d9a8dcd6="">
+      <svg
+        viewBox="0 0 1366 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        data-v-d9a8dcd6=""
+      >
+        <path
+          d="M1029.91 48C1316.96 48 1366 0 1366 0L0 0V48C0 48 82.2194 10.4939 360.612 10.4939C639.005 10.4939 742.862 48 1029.91 48Z"
+          fill="#e5cddd"
+          data-v-d9a8dcd6=""
+        ></path>
+      </svg>
+    </div>
+    <!-- main -->
+    <div class="main-container">
+      <div class="form-box">
+        <div class="btn-box">
+          <div class="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Registro
+          </button>
+        </div>
+        <div class="social-icons">
+          <i class="bx bxl-facebook-circle"></i>
+          <i class="bx bxl-google"></i>
+          <i class="bx bxl-apple"></i>
+        </div>
+        <form id="login-form" class="input-group">
+          <input
+          type="text"
+          class="input-field"
+          placeholder="Name or Email"
+          required
+          />
+          <input
+          type="password"
+          class="input-field"
+          placeholder="Enter password"
+          required
+          style="margin-bottom: 20px;"
+          />
+          <label class="custom-checkbox">
+            <input type="checkbox" class="check-box">
+            <span class="checkmark"></span><span class="span-text">Remember password</span></span>
+        </label>        
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+
+        <form id="register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Pet name"
+            required 
+          />
+          <input
+            type="number"
+            class="input-field"
+            placeholder="Pet age"
+            required 
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter password"
+            required 
+            style="margin-bottom: 20px;"
+          />
+          <label class="custom-checkbox">
+            <input type="checkbox" class="check-box">
+            <span class="checkmark"></span><span class="span-text">I agree to the <a href="#" class="terms">Terms & conditions</a></span>
+        </label>        
+          <button type="submit" class="submit-btn">Registrar</button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="background-top-footer" data-v-d9a8dcd6="">
+      <svg
+        viewBox="0 0 1366 48"
+        fill="none"
+        xmlns='http://www.w3.org/2000/svg" data-v-d9a8dcd6='
+      >
+        <path
+          d="M336.091 0C49.0433 0 0 48 0 48L1366 48V0C1366 0 1283.78 37.5061 1005.39 37.5061C726.995 37.5061 623.138 0 336.091 0Z"
+          fill="#e5cddd"
+          data-v-d9a8dcd6=""
+        ></path>
+      </svg>
+    </div>
+    <footer>
+      <p>&copy;Todos os direitos reservados - Woof World</p>
+    </footer>
+    <!-- script -->
+    <script>
+      const log = document.getElementById("login-form");
+      const reg = document.getElementById("register");
+      const form = document.querySelector(".form-box")
+      const btn = document.querySelector(".btn");
+      const bckBtn = document
+        .querySelector("#home")
+        .addEventListener("click", () => {
+          window.location.href = "../index.html";
+        });
+
+      function register() {
+        log.style.left = "-400px";
+        reg.style.left = "50px";
+        btn.style.left = "110px";
+        form.style.height = "580px"
+    }
+    
+    function login() {
+        log.style.left = "50px";
+        reg.style.left = "450px";
+        btn.style.left = "0";
+        form.style.height = "450px"
+      }
+    </script>
+  </body>
+</html>

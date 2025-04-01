@@ -78,22 +78,21 @@ nav ul li a:hover::before {
 }
 
 
-#compras {
+#compras, #login {
     background-color: transparent;
     border: none;
     width: 45px;
     height: 45px;
     padding: 10px;
     margin-top: 25px;
-    margin-right: 25px;
     cursor: pointer;
 }
 
-#compras img {
+#compras img, #login img {
     width: 100%;
 }
 
-#compras:hover {
+#compras:hover, #login:hover {
     background-color: #655793;
     border-radius: 100%;
 }
@@ -192,6 +191,12 @@ article:hover {
     height: max-content;
 }
 
+#services {
+    background-color: #beabd2;
+    padding: 10px;
+    width: 100%;
+}
+
 .carousel-item {
     background-color: #655793;
     margin: 5px;
@@ -205,66 +210,6 @@ article:hover {
     width: 200px;
 }
 
-@media (max-width: 1200px) {
-    article {
-        width: 45%; /* Ajusta a largura das caixas para duas colunas */
-    }
-}
-
-/* Ajuste para tablets e telas médias */
-@media (max-width: 992px) {
-    nav ul {
-        font-size: 16px; /* Reduz o tamanho da fonte do menu */
-        flex-direction: column; /* Muda a direção do menu para coluna */
-        align-items: flex-start;
-    }
-
-    header {
-        height: auto;
-        padding: 10px;
-    }
-
-    article {
-        width: 48%; /* Ajusta a largura das caixas */
-    }
-
-    .service-img {
-        max-width: 100px; /* Ajusta o tamanho das imagens */
-    }
-}
-
-
-@media (max-width: 768px) {
-    header {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
-
-    nav ul {
-        font-size: 14px; 
-        flex-direction: column;
-        margin: 0;
-    }
-
-    article {
-        width: 100%; 
-        height: 150px; 
-        margin: 10px 0; 
-    }
-
-    .service-img {
-        max-width: 80px; 
-    }
-
-    .service-title {
-        font-size: 18px;
-    }
-
-    .service-description {
-        font-size: 14px; 
-    }
-}
 
 /* Estilos para a seção de produtos */
 #products {
@@ -297,18 +242,35 @@ article:hover {
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
+    background: transparent;
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buy-btn {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-family: "Alata", sans-serif;
+    background-color: #F6D325;
+    margin: 10px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
 }
 
 .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: #F6D325;
+    width: 4%;
+    border-radius: 50%;
     color: white;
     border: none;
     padding: 10px;
@@ -316,7 +278,7 @@ article:hover {
 }
 
 .prev {
-    left: 1px;
+    left: 57px;
     z-index: 19;
 }
 
@@ -410,15 +372,14 @@ article:hover {
 
 .carousel-btn {
     background: none;
-    border: none;
+    border: none;   
     font-size: 2em;
     cursor: pointer;
-    color: #4B0082;
+    color: #fff;
+    background: #F6D325;
+    width: 7%;
     padding: 10px;
-}
-
-.carousel-btn:hover {
-    color: #6A5ACD;
+    position: absolute;
 }
 
 .dots {
@@ -443,6 +404,102 @@ article:hover {
     top: -2px;
 }
 
+#feedbacks {
+    text-align: center;
+    background-color: #f2f1f1;
+    padding: 40px 20px;
+}
+
+#feedbacks h2 {
+    font-family: 'Spicy Rice', sans-serif;
+    font-size: 2.2em;
+    color: #4B0082;
+    margin-bottom: 20px;
+}
+
+.feedback-carousel {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.feedback-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.feedback-slide {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+    flex: 1;
+    max-width: 250px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.feedback-content {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.feedback-content h3 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 1.5em;
+    color: #655793;
+    margin-bottom: 10px;
+}
+
+.feedback-content p {
+    font-family: 'Alata', sans-serif;
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.ratings {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.feedback-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.feedback-nav button {
+    color: #4B0082;
+    border: none;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 10px;
+}
+
+.feedback-nav button:hover {
+    color: #6A5ACD;
+}
+
+
 footer {
     background-color: #e5cddd;
     width: 100%;
@@ -462,29 +519,4 @@ footer p {
     top: 17px;
     left: -4px;
     width: 100.255%;
-}
-
-@media (max-width: 576px) {
-    nav ul li {
-        font-size: 14px; 
-        padding: 8px; 
-    }
-
-    article {
-        width: 100%; 
-        margin: 10px 0;
-        height: 130px; 
-    }
-
-    .service-img {
-        max-width: 70px; 
-    }
-
-    .service-title {
-        font-size: 16px; 
-    }
-
-    .service-description {
-        font-size: 12px; 
-    }
 }

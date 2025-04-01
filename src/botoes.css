@@ -1,0 +1,98 @@
+.melhores_em {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.melhores_em h2 {
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: normal;
+    
+}
+
+.carousel-container-list {
+    width: 100%;
+}
+
+/* Lista de Itens */
+.list_service {
+    display: flex;
+    position: relative;
+    gap: 30px; /* Reduzi a distância entre os itens */
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+/* Itens do Carrossel */
+.servico {
+    opacity: 1;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    position: relative;
+    width: 140px; /* Aumentei o tamanho das imagens */
+    height: 160px;
+    text-align: center;
+    font-size: 10px;
+    transform: scale(1);
+    z-index: 1;
+}
+
+/* Efeito de hover */
+.servico:hover {
+    transform: scale(1.2); /* Aumentei um pouco mais no hover */
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0s;
+}
+
+/* Imagens do Serviço */
+.servico-img {
+    width: 180px; /* Aumentei a largura */
+    height: 180px; /* Aumentei a altura */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px; /* Ajustei para manter centralizado */
+}
+
+.servico-img img {
+    width: 100%; /* Mantém o preenchimento adequado */
+    height: auto;
+}
+
+/* Centralização do texto */
+.servico p {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+
+/* Ajuste de alinhamento específico */
+.tosa {
+    padding-right: 45px;
+}
+
+.banho {
+    padding-right: 38px;
+}
+
+.consulta {
+    padding-right: 60px;
+}
+
+.hotel{
+padding-right: 33px;
+}
+
+.passeio{
+padding-right: 40px;
+}
+
+.vacina{
+padding-right: 43px;
+}

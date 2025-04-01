@@ -1,21 +1,20 @@
 ## FEITO
 - formatação prévia dos serviços;
 - header e footer;
-- estilização da section de planos.
+- estilização da section de planos;
+- formatação e estilização do carrossel produtos;
+- criação das telas login, cadastro e carrinho;
+- formatação da section de sobre nós (encaixá-la no projeto, adaptando-a para que não perca sua estilização inicial).
 
 ## FAZENDO
-- formatação e estilização do carrossel produtos;
-- ajustes no carrossel home.
+- ajustes no carrossel home;
+- ajustes no pet plans;
+- ajustes na tela carrinho (funcionalidades do redirecionamento de produtos).
 
 ## A FAZER
-- criação das telas login, cadastro e carrinho;
-- criação dos redirecionamentos de produtos e serviços (botões de saiba mais);
-- formatação da section de sobre nós (encaixá-la no projeto, adaptando-a para que não perca sua estilização inicial).
+- criação dos redirecionamentos de serviços (botões de saiba mais);
+
 
 
 ## PRAZO
-- 24/03 --> terminar os ajustes e formatações;
-- 25/03 --> criação das telas e redirecionamentos faltantes;
-- 26/03 --> formatações e ajustes do about us;
-- 27/03 --> revisão do código e do design (testes e debug)
-- 01/04 --> entrega do front-end do projeto."
+- 01/04 --> entrega do front-end do projeto.
