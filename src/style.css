@@ -503,15 +503,39 @@ article:hover {
 footer {
     background-color: #e5cddd;
     width: 100%;
-    height: 10vh;
+    height: 30vh;
     margin-top: 10px;
     font-family: 'Alata', sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 footer p {
     padding: 20px;
     font-weight: bold;
+}
+
+.icons-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.icons-flex p {
+    font-size: 15px;
+}
+
+.devBy {
+    display: flex;
+    margin: 0 auto;
+}
+
+footer i {
+    color: #000;
+    width: 100%;
+    font-size: 40px;
 }
 
 .background-top-footer {

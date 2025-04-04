@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="src/slide.css">
     <link rel="stylesheet" href="src/aboutUs.css">
     <link rel="stylesheet" href="src/botoes.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
     <link rel="shortcut icon" href="WoofWorld fav icon.png" type="image/x-icon">
     <title>Woof World</title>
 </head>
@@ -364,7 +368,12 @@
                         <div class="ratings">⭐ 4.9 Yelp | ⭐ 4.8 Google</div>
                     </div>
                 </div>
-    
+                
+                <div class="feedback-slide">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gGMnu9-gyTM?si=TJfCQDm4S2WUu-of" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     
@@ -380,97 +389,23 @@
     </div>
     <footer>
         <p>&copy;Todos os direitos reservados - Woof World</p>
+        <p>Desenvolvido por:</p>
+        <div class="devBy">
+            <div class="icons-flex">
+                <a href="https://github.com/natzada"><i class="bx bxl-github"></i></a> <p>Nathalia Almeida Yoshioka</p>
+            </div>
+            <div class="icons-flex">
+                <a href="https://github.com/Isa-Marcelino08"><i class="bx bxl-github"></i></a> <p>Isabely Kusmitsch Rodrigues Marcelino</p>
+            </div>
+            <div class="icons-flex">
+                <a href="https://github.com/aaaaannnnaaaaa"><i class="bx bxl-github"></i></a> <p>Ana Caroline Mena B. de Paula</p>
+            </div>
+            <div class="icons-flex">
+                <a href="https://github.com/aaaaannnnaaaaa"><i class="bx bxl-github"></i></a> <p>Angelina Almeida</p>
+            </div>
+        </div>
     </footer>
 
     <script src="src/script.js"></script>
-    <!-- <script>
-        // Script para o carrossel de produtos
-        const carousel = document.querySelector('#products .carousel');
-        const items = document.querySelectorAll('#products .carousel-item');
-        const totalItems = items.length;
-        const itemWidth = items[0].offsetWidth;
-        let currentIndex = 0;
-
-        function setupInfiniteCarousel() {
-            const firstItems = Array.from(items).slice(0, 3);
-            const lastItems = Array.from(items).slice(-3);
-
-            lastItems.forEach(item => carousel.insertBefore(item.cloneNode(true), items[0]));
-            firstItems.forEach(item => carousel.appendChild(item.cloneNode(true)));
-
-            currentIndex = 3;
-            carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-        }
-
-        function moveSlide(step) {
-            currentIndex += step;
-
-            carousel.style.transition = 'transform 0.5s ease';
-            carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-
-            carousel.addEventListener('transitionend', function resetPosition() {
-                if (currentIndex <= 2) {
-                    currentIndex = totalItems + 2;
-                    carousel.style.transition = 'none';
-                    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-                } else if (currentIndex >= totalItems + 3) {
-                    currentIndex = 3;
-                    carousel.style.transition = 'none';
-                    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-                }
-                carousel.removeEventListener('transitionend', resetPosition);
-            }, { once: true });
-        }
-
-        setupInfiniteCarousel();
-
-        // Script para o carrossel de planos
-        let currentSlide = 0;
-        const slides = document.querySelector('#pet-plans .carousel-slides');
-        const totalSlides = document.querySelectorAll('#pet-plans .slide').length;
-        const dots = document.querySelectorAll('#pet-plans .dot');
-
-        function updateSlide() {
-            slides.style.transform = `translateX(-${currentSlide * 310}px)`;
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[currentSlide].classList.add('active');
-        }
-
-        document.querySelector('#pet-plans .next').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateSlide();
-        });
-
-        document.querySelector('#pet-plans .prev').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            updateSlide();
-        });
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentSlide = index;
-                updateSlide();
-            });
-        });
-
-        setInterval(() => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateSlide();
-        }, 5000);
-
-        let index = 0;
-
-        function moveSlide(step) {
-            const carousel = document.querySelector('.feedback-slides'); 
-            const slides = document.querySelectorAll('.feedback-slide');
-            const totalSlides = slides.length;
-
-            index = (index + step + totalSlides) % totalSlides;
-            
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-            carousel.style.transition = 'transform 0.5s ease-in-out';
-        }
-
-    </script> -->
 </body>
 </html>
